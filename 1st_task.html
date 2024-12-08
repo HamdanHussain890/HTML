@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servey Form</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Servey Form</h1>
+        <div class="contaner">
+            <form action="servey" method="post">
+                <caption><i>Thank For your taking Your Time To Give Us FeedBack</i></caption>
+                <br><br>
+                <label for="Name">Name
+                    <input 
+                    type="text"
+                    name="Name"
+                    id="Name"
+                    class="Name"
+                    placeholder="Name">
+                </label>
+                <br><br>
+                <label for="Emal">Email 
+                    <input 
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="email"
+                    placeholder="email">
+                </label>
+                <br><br>
+                <label for="Age">Age 
+                    <input 
+                    type="number"
+                    name="Age"
+                    id="Age"
+                    class="Age"
+                    placeholder="Age">
+                </label>
+                <br><br>
+                <label for="Role">
+                    Choose A Role That Best Describe You
+                    <br><br>
+                    <select name="Role" id="Role">
+                        <option value="no"></option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Doctor">Doctor</option>
+                    </select>
+                    </label>
+                    <br><br>
+                    <caption>Would You Recommend Our ProductmTo A Friend ?</caption>
+                    <br>
+                    <label for="Never">
+                        <input type="radio" name="Recommend" id="Never">Never
+                    </label>
+                    <br>
+                    <label for="Maybe">
+                        <input type="radio" name="Recommend" id="Maybe">Maybe
+                    </label>
+                    <br>
+                    <label for="Likely">
+                        <input type="radio" name="Recommend" id="Likely">Likely
+                    </label>
+                    <br>
+                    <label for="Definitely">
+                        <input type="radio" name="Recommend" id="Definitely">Definitely
+                    </label>
+                    <br><br>
+                    <caption>
+                        Select Thing That You Liked About Our Product
+                    </caption>
+                    <br>
+                    <label for="UI">
+                        <input type="checkbox" name="just like" id="UI">UI
+                    </label>
+                    <br>
+                    <label for="Features">
+                        <input type="checkbox" name="just like" id="Feature">Features
+                    </label>
+                    <br>
+                    <label for="Service">
+                        <input type="checkbox" name="just like" id="Service">Service
+                    </label>
+                    <br>
+                    <label for="Simplenees">
+                        <input type="checkbox" name="just like" id="Simplenees">Simplenees
+                    </label>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+
+</body>
+</html>
