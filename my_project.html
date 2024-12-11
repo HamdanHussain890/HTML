@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-friendly Footprint Tracker</title>
+    <link rel="stylesheet" href="my_projectstyle.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">🌿 EcoTracker</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="cta-buttons">
+            <a href="#get-started" class="cta">Get Started</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Track Your Carbon Footprint, Make a Difference!</h1>
+        <p>Join a community of eco-conscious people reducing their impact on the planet, one step at a time.</p>
+        <div class="hero-buttons">
+            <a href="#get-started" class="cta">Get Started</a>
+            <a href="#learn-more" class="secondary">Learn More</a>
+        </div>
+    </div>
+</section>
+<!-- about and platform sections -->
+<section class="about">
+    <div class="about-content">
+        <h2>About EcoTracker</h2>
+        <p>
+            EcoTracker is dedicated to helping individuals and communities understand and reduce their carbon footprint.
+            Our platform offers tools and resources to track your daily activities, educate you on sustainable practices,
+            and connect you with a community of like-minded eco-conscious individuals.
+        </p>
+        <p>
+            Join us in our mission to create a greener planet for future generations. Together, we can make a difference!
+        </p>
+        <button id="learnMoreBtn">Learn More</button>
+    </div>
+</section>
+
+<!-- Key Features Section  -->
+<section class="key-features">
+    <h2>Key Features</h2>
+    <div class="features-container">
+        <div class="feature">
+            <h3>Track Your Footprint</h3>
+            <p>Log your daily activities to calculate and monitor your carbon footprint effortlessly.</p>
+        </div>
+        <div class="feature">
+            <h3>Eco-Friendly Tips</h3>
+            <p>Receive personalized tips on how to reduce your environmental impact based on your activities.</p>
+        </div>
+        <div class="feature">
+            <h3>Community Engagement</h3>
+            <p>Connect with like-minded individuals and participate in community challenges to promote sustainability.</p>
+        </div>
+        <div class="feature">
+            <h3>Progress Tracking</h3>
+            <p>Visualize your progress over time and see how your actions contribute to a greener planet.</p>
+        </div>
+    </div>
+    <button id="getStartedBtn">Get Started</button>
+</section>
+
+<!--  Interactive Carbon Calculator Preview Section -->
+<section class="carbon-calculator-preview">
+    <h2>Interactive Carbon Calculator Preview</h2>
+    <p>Estimate your carbon footprint and see how small changes can make a big impact!</p>
+    <div class="calculator-container">
+        <input type="number" id="milesDriven" placeholder="Miles Driven" />
+        <input type="number" id="electricityUsage" placeholder="Electricity Usage (kWh)" />
+        <button id="calculateBtn">Calculate</button>
+    </div>
+    <div class="result" id="resultContainer" style="display: none;">
+        <h3>Your Estimated Carbon Footprint:</h3>
+        <p id="carbonFootprint"></p>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonials-container">
+        <div class="testimonial">
+            <p>"EcoTracker has transformed my understanding of my carbon footprint. I love the personalized tips!"</p>
+            <h3>- Sarah J.</h3>
+        </div>
+        <div class="testimonial">
+            <p>"The community challenges are motivating! I've met so many eco-conscious friends through this platform."</p>
+            <h3>- John D.</h3>
+        </div>
+        <div class="testimonial">
+            <p>"The carbon calculator is super easy to use. It's helped me make small changes that add up!"</p>
+            <h3>- Emily R.</h3>
+        </div>
+    </div>
+    <button id="moreTestimonialsBtn">See More Testimonials</button>
+</section>
+
+<!-- Eco-friendly Tips and Blog Preview Section -->
+<section class="eco-tips-blog-preview">
+    <h2>Eco-friendly Tips & Blog</h2>
+    <p>Explore our latest articles and tips to live a sustainable lifestyle.</p>
+    <div class="tips-container">
+        <div class="tip">
+            <h3>Reduce, Reuse, Recycle</h3>
+            <p>Learn how to minimize waste by following the three R's in your daily life.</p>
+        </div>
+        <div class="tip">
+            <h3>Energy Saving Tips</h3>
+            <p>Discover simple ways to reduce energy consumption at home.</p>
+        </div>
+        <div class="tip">
+            <h3>Plant-Based Diet Benefits</h3>
+            <p>Understand the environmental benefits of adopting a plant-based diet.</p>
+        </div>
+    </div>
+    <button id="viewBlogBtn">View All Tips & Blogs</button>
+</section>
+
+<!-- Community Section -->
+<section class="community">
+    <h2>Join Our Eco-Friendly Community</h2>
+    <p>Connect with like-minded individuals and make a positive impact together!</p>
+    <div class="community-container">
+        <div class="community-member">
+            <img src="https://via.placeholder.com/100" alt="Member 1" />
+            <h3>Alice Green</h3>
+            <p>"I love being part of this community! Together, we can make a difference."</p>
+        </div>
+        <div class="community-member">
+            <img src="https://via.placeholder.com/100" alt="Member 2" />
+            <h3>Bob Earth</h3>
+            <p>"The challenges motivate me to adopt a more sustainable lifestyle."</p>
+        </div>
+        <div class="community-member">
+            <img src="https://via.placeholder.com/100" alt="Member 3" />
+            <h3>Charlie Eco</h3>
+            <p>"It's amazing to share tips and ideas with others who care about the planet."</p>
+        </div>
+    </div>
+    <button id="joinCommunityBtn">Join the Community</button>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <h1>EcoTracker</h1>
+            <p>Track your carbon footprint, make a difference!</p>
+        </div>
+        <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#tips">Eco-friendly Tips</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 EcoTracker. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#" aria-label="Facebook"><img src="https://via.placeholder.com/20" alt="Facebook Icon"></a>
+            <a href="#" aria-label="Twitter"><img src="https://via.placeholder.com/20" alt="Twitter Icon"></a>
+            <a href="#" aria-label="Instagram"><img src="https://via.placeholder.com/20" alt="Instagram Icon"></a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="script.js">
+    function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+
+// You can add interactive features or functionality later
+document.addEventListener('DOMContentLoaded', function() {
+    const ctaButton = document.querySelector('.cta');
+    ctaButton.addEventListener('click', function() {
+        alert('Getting Started!'); // Placeholder for functionality
+    });
+});
+
+document.getElementById('learnMoreBtn').addEventListener('click', function() {
+    alert('More information about EcoTracker will be available soon!');
+});
+
+document.getElementById('getStartedBtn').addEventListener('click', function() {
+    alert('Ready to start your eco-friendly journey!'); // Placeholder for functionality
+});
+
+document.getElementById('calculateBtn').addEventListener('click', function() {
+    const milesDriven = parseFloat(document.getElementById('milesDriven').value) || 0;
+    const electricityUsage = parseFloat(document.getElementById('electricityUsage').value) || 0;
+
+    // Simple calculation (you can modify this based on real carbon footprint calculations)
+    const carbonFootprint = (milesDriven * 0.404) + (electricityUsage * 0.92); // Example factors
+
+    document.getElementById('carbonFootprint').innerText = `${carbonFootprint.toFixed(2)} kg CO2`;
+    document.getElementById('resultContainer').style.display = 'block'; // Show the result container
+});
+
+document.getElementById('moreTestimonialsBtn').addEventListener('click', function() {
+    alert('More testimonials coming soon!'); // Placeholder for future functionality
+});
+
+document.getElementById('viewBlogBtn').addEventListener('click', function() {
+    alert('Navigating to the full tips and blog section!'); // Placeholder for future functionality
+});
+
+document.getElementById('joinCommunityBtn').addEventListener('click', function() {
+    alert('Thank you for joining our eco-friendly community!'); // Placeholder for future functionality
+});
+
+// Optional: You can add any JavaScript functionality for the footer here
+
+</script>
+</body>
+</html>
